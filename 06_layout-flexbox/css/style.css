@@ -1,0 +1,313 @@
+@font-face {
+    font-family: MullerBold; /* Имя шрифта */
+    src: url(../fonts/MullerBold.woff); /* Путь к файлу со шрифтом */
+   }
+
+@font-face {
+    font-family: MullerLight; /* Имя шрифта */
+    src: url(../fonts/MullerLight.woff); /* Путь к файлу со шрифтом */
+   }
+
+@font-face {
+    font-family: MullerMedium; /* Имя шрифта */
+    src: url(../fonts/MullerMedium.woff); /* Путь к файлу со шрифтом */
+   }  
+   
+@font-face {
+    font-family: MullerRegular; /* Имя шрифта */
+    src: url(../fonts/MullerRegular.woff); /* Путь к файлу со шрифтом */
+   } 
+
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+html { 
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Header */
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    line-height: 60px;
+}
+
+.header-top-left{
+    align-items: center;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+/* Навигация */
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 65px;
+    border-radius: 12px;
+    line-height: 50px;
+    background: #fff;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 45px;
+    font-family: MullerRegular;
+    font-size: 16px;
+    color: #333333;
+}
+
+/* Поиск */
+
+.search-form {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
+    max-width: 350px;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+}
+
+.container-reserv-offer {
+    display: flex;
+    flex: 1 1 50%;
+}
+
+.section-reservation {
+    flex: 1 1 45%;
+    margin-right: 55px;
+}
+
+.section-offer {
+    flex: 1 1 45%;
+    justify-content: stretch;
+}
+
+.section-header {
+    padding-left: 45px;
+    padding-bottom: 15px;
+    font-size: 40px;
+    color: #333333;
+    font-family: MullerRegular;
+}
+
+.section-reservation-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-resarvation-input {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    height: 70px;
+    width: 100%;
+    font-size: 16px;
+    font-family: MullerRegular;
+    color: #999;
+    background: #fff;
+    border-radius: 12px;
+    border: none;
+   
+}
+
+.section-resarvation-btn {
+    display: inline;
+    margin-right: 28px;
+    padding: 30px;
+    max-width: 160px;
+    color: white;
+    font-size: 16px;
+    font-family: MullerBold;
+    background-color: #cc9933;
+    border: none;
+    border-radius: 12px;
+}
+
+.section-resarvation-text {
+    display: inline;
+}
+
+.section-resarvation-text strong{
+    color: #cc9933;
+}
+/* Спецпредложение */
+
+.section-offer-text {
+    display: inline;
+}
+
+/* About us */
+
+.section-content {
+    padding-left: 45px;
+    max-width: 900px;
+    line-height: 30px;
+    color: #999;
+    font-size: 16px;
+    font-family: MullerRegular;
+}
+
+/* Services */
+
+.section-services-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 50%;
+    justify-content: space-between;
+}
+
+.section-services-item {
+    margin-bottom: 20px;
+    width: 570px;
+    border-radius: 12px;
+    background: #fff;   
+}
+
+.section-services-img {
+    display: block;
+    height: 160px;
+}
+
+.section-services-info{
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
+
+.section-services-header {
+    font-family: MullerMedium;
+    font-size: 22px;
+    color: #cc9933;
+}
+
+.section-services-content {
+    max-width: 430px;
+}
+
+/* Преимущества */
+
+.section-adv-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 25%;
+    justify-content: space-between;
+}
+
+.section-adv-item {
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 276px;
+    border-radius: 12px;
+    background: #fff;   
+}
+
+.section-adv-icon{
+    display: block;
+    height: 100px;
+}
+
+.section-adv-item-info {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+}
+
+
+/* Размещение */
+
+.section-placement-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 33.33%;
+    justify-content: space-between;
+}
+
+.section-placement-item {
+    margin-bottom: 25px;
+    width: 370px;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.section-placement-left {
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-top: 25px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-family: MullerRegular;
+}
+
+.section-placement-desc {
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+.section-placement-all {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    vertical-align: bottom;
+    height: 100%;
+}
+
+.section-placement-all-info {
+    padding-bottom: 55px;
+}
+
+
+
+.main-header {
+    visibility: hidden;
+}
+
